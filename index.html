@@ -76,8 +76,8 @@
 
     var options = {
       zoomSnap: .1,
-      center: [39.1, -84.5],
-      zoom: 9,
+      center: [39.2, -84.5],
+      zoom: 11,
       minZoom: 6,
       maxZoom: 15
     }
@@ -118,6 +118,12 @@
     var selectedTrail = document.getElementById('trails').value;
     console.log(selectedTrail);
 
+    // icon for churches
+    var churchIcon = L.icon({
+      iconUrl: "images/church.svg",
+      iconSize: [15,15],
+    })
+
     // add church points
     // use JQuery to import XML data
     $(document).ready(function() {
@@ -134,36 +140,75 @@
     // add church data from XML file
     function parseXML(xml) {
       $(xml).find("marker").each(function() {
-        churchPoint = L.marker([$(this).attr("lat"), $(this).attr("lng")])
-          // .bindPopup($(this).attr("name"))
+        churchPoint = L.marker([$(this).attr("lat"), $(this).attr("lng")], {
+          icon: churchIcon
+        }).bindPopup($(this).attr("name"))
           .addTo(churchLayer);
       });
     }
     churchLayer.addTo(map);
 
-    trailsLayers = {};
+    // trailsLayers = {};
 
     // add route data to map
-    $.getJSON("data/trails.geojson", function(data) {
-      for (var layer in layerInfo) {
-        trailsLayers[layer] = L.geoJson(data, {
-          filter: function(feature) {
-            if (feature.properties.name == layerInfo[layer]["name"]) {
-              return feature;
-            }
-          },
-          style: function(feature) {
-            return {dashArray: [5,5]};
-          }
-        }).addTo(map);
-      }
+    $.getJSON("data/trails.geojson", function(trails) {
+      // for (var layer in layerInfo) {
+      //   trailsLayers[layer] = L.geoJson(data, {
+      //     filter: function(feature) {
+      //       if (feature.properties.name == layerInfo[layer]["name"]) {
+      //         return feature;
+      //       }
+      //     },
+      //     style: function(feature) {
+      //       return {dashArray: [5,5]};
+      //     }
+      //   }).addTo(map);
+      // }
+      drawMap(trails);
     });
 
-    console.log(trailsLayers);
+    // console.log(trailsLayers);
 
-    addUi(trailsLayers, layerInfo)
+    // addUi(trailsLayers, layerInfo)
 
-    function addUi(dataLayer, layerInfo) {
+    function drawMap(trails) {
+      var dataLayer = L.geoJson(trails, {
+        style: function(feature) {
+          return {
+            color: 'black',
+            weight: 1,
+            dashArray: [5,5]
+          };
+        },
+        onEachFeature: function(feature, layer) {
+          // when mousing over a layer
+          layer.on('mouseover', function() {
+
+            // change the stroke color and bring that element to the front
+            layer.setStyle({
+              color: 'yellow',
+              // weight: 1
+            })//.bringToFront();
+          });
+
+          // on mousing off layer
+          layer.on('mouseout', function() {
+
+            // reset the layer style to its original stroke color
+            layer.setStyle({
+              color: 'black',
+              // weight: .5
+            });
+          });
+        }
+      }).addTo(map);
+
+      updateMap(dataLayer, 'Cathedral Trail 5 mi');
+      addUi(dataLayer);
+
+    } // end drawMap
+
+    function addUi(dataLayer,) {
       // create the dropdown
       var selectControl = L.control({ position: 'topright' });
       // when control is added
@@ -173,26 +218,39 @@
       }
       // add the control to the map
       selectControl.addTo(map);
-      $('select[id="trails"]').change(function() {
+
+      $('select[id="trails"]')
+        .change(function() {
         // code executed here when change event occurs
         selectedTrail = this.value;
         console.log(selectedTrail);
         // call updateMap function
-        updateMap(dataLayer, layerInfo);
+        updateMap(dataLayer, selectedTrail);
       });
     } // end addUi
 
-    function updateMap(dataLayer, layerInfo) {
-      for (var layer in layerInfo) {
-        console.log(dataLayer[layer]);
-        L.geoJson(dataLayer[layer], {
-          filter: function(feature) {
-            if (feature.properties.name == selectedTrail) {
-              return feature;
-            }
-          }
-        }).addTo(map);
-      }
+    function updateMap(dataLayer, selectedTrail) {
+      console.log(dataLayer.getLayers());
+      dataLayer.removeFrom(map);
+      dataLayer.eachLayer(function(layer) {
+        // console.log(layer);
+        if (layer.feature.properties["name"] == selectedTrail) {
+          console.log(layer);
+          return layer;
+        } else {
+          layer.remove();
+        }
+      }).addTo(map);
+      // for (var layer in layerInfo) {
+      //   console.log(dataLayer[layer]);
+      //   L.geoJson(dataLayer[layer], {
+      //     filter: function(feature) {
+      //       if (feature.properties.name == selectedTrail) {
+      //         return feature;
+      //       }
+      //     }
+      //   }).addTo(map);
+      // }
     } // end updateMap
 
   </script>
