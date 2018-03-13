@@ -5,22 +5,20 @@
       "type": "Feature",
       "properties": {
         "name": "Cathedral Trail 5 mi",
-        "description": "Picture The beginning and end of this Pilgrimage is the Archdiocese of Cincinnati’s Cathedral, the seat of the Archbishop, heir of the Apostles. The Bishops, in union with the Bishop of Rome (the Pope), are responsible for our spiritual welfare and have established parishes throughout their dioceses for our spiritual needs.  The Churches along this trail, in or near downtown Cincinnati, are old parishes with beautiful interiors and exteriors, rich histories and have served the needs of the faithful for many generations. The map indicates existing churches, former churches and where churches were in the distant past.",
+        "description": "The beginning and end of this Pilgrimage is the Archdiocese of Cincinnati’s Cathedral, the seat of the Archbishop, heir of the Apostles. The Bishops, in union with the Bishop of Rome (the Pope), are responsible for our spiritual welfare and have established parishes throughout their dioceses for our spiritual needs.  The Churches along this trail, in or near downtown Cincinnati, are old parishes with beautiful interiors and exteriors, rich histories and have served the needs of the faithful for many generations. The map indicates existing churches, former churches and where churches were in the distant past.",
         "stops": {
           "type": "FeatureCollection",
           "features": [
             {
               "type": "Feature",
               "properties": {
-                "number": 1,
-                "description": "Saint Peter in Chains Cathedral",
+                "description": "St. Peter in Chains Cathedral",
                 "directions": {
                   "type": "FeatureCollection",
                   "features": [
                     {
                       "type": "Feature",
                       "properties": {
-                        "number": 1,
                         "description": "Head E on W 8th St toward Plum St."
                       },
                       "geometry": {
@@ -34,7 +32,6 @@
                     {
                       "type": "Feature",
                       "properties": {
-                        "number": 2,
                         "description": "Continue onto Garfield Place"
                       },
                       "geometry": {
@@ -48,7 +45,6 @@
                     {
                       "type": "Feature",
                       "properties": {
-                        "number": 3,
                         "description": "Turn right onto Vine St."
                       },
                       "geometry": {
@@ -62,7 +58,6 @@
                     {
                       "type": "Feature",
                       "properties": {
-                        "number": 4,
                         "description": "Turn left onto E 8th St. and continue to St. Louis Church"
                       },
                       "geometry": {
@@ -81,6 +76,779 @@
                 "coordinates": [
                   -84.5194798707962,
                   39.10347724852111
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "St. Louis Church",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Head E on E 8th St toward Walnut St"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51245248317719,
+                          39.10463866908289
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Sycamore St. and continue to St. Francis Xavier Church"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50897097587585,
+                          39.105152768490484
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -84.51239347457886,
+                  39.104401391168615
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "St. Francis Xavier Church",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Head S on Sycamore St toward E 6th St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50859010219574,
+                          39.10367706417415
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto E 4th St. and enter into the Lytle Park Historic District"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50783103704453,
+                          39.10067352541232
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -84.50904875993729,
+                  39.10358756348292
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "Lytle Park Historic District",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Head NE on E 4th St toward Pike St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50408667325974,
+                          39.10158521598464
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Pike St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50344562530518,
+                          39.10199318328998
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto E 3rd St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50263291597366,
+                          39.10123136487936
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Eggleston Ave."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50024574995041,
+                          39.10269255032071
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto E Pete Rose Way"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49906289577484,
+                          39.10207644163363
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Slight left onto Adams Crossing"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49651211500168,
+                          39.103539690973506
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left. Take the stairs"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.4962814450264,
+                          39.104064205390195
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right. Take the stairs"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.496750831604,
+                          39.1045012977562
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -84.50455605983734,
+                  39.10108774245343
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "Riverview Park",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Head NW over Columbia Parkway (SR 50). Take the stairs and bridge."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.4964075088501,
+                          39.10491757368025
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right on Hill St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49722021818161,
+                          39.105687677659084
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto St. Gregory Street"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49654698371886,
+                          39.1061330853092
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto stairs up to Holy Cross Immaculata Church"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49701637029648,
+                          39.1065618395474
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -84.49621975421906,
+                  39.104821830435384
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "Holy Cross Immaculata Church",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Head N on Guido St toward Pavilion St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49660599231719,
+                          39.10686363101517
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto Pavilion St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49661940336227,
+                          39.10759625044387
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "The (former) Holy Cross Monastery & Chapel is at the top of the hill. The Chapel is on the right down St Paul Place."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49853718280792,
+                          39.107744022189834
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -84.49643433094025,
+                  39.10706135575898
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "The (former) Holy Cross Monastery & Chapel",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Head S on St Paul Place."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49845939874648,
+                          39.10773153444865
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Go down the stairs"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.498550593853,
+                          39.107069680999174
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Celestial St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49873834848404,
+                          39.1064556918964
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left into the Celestial parking lot, next to the Rookwood Pottery and stop at the flag pole. This point has a great view westward to downtown Cincinnati."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50004458427429,
+                          39.1070634370691
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -84.49864983558655,
+                  39.107750266059625
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "The Celestial",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Leave the parking lot and to the bearing left past the Rookwood Pottery"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50004458427429,
+                          39.10704054265416
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto Monastery St. and go down the hill"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49972808361052,
+                          39.10797088243637
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Baum St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50205624103546,
+                          39.10572306061272
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Continue onto Van Meter St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50277507305145,
+                          39.10591662586817
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left toward Gilbert Ave. Take the stairs"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50307816267014,
+                          39.10688236285681
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Gilbert Ave. Take the stairs"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50404644012451,
+                          39.106998916426114
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto E Court St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50452387332915,
+                          39.10720912862636
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto Broadway St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50764864683151,
+                          39.10735273858095
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Sharp right onto Eggleston Ave."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50750917196274,
+                          39.10674499590267
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto E Central Parkway"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50869202613829,
+                          39.10795215088404
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Sycamore St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.5096629858017,
+                          39.10778148540016
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto E Central Parkway"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50970053672789,
+                          39.10792717547319
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Main St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.5112508535385,
+                          39.10772320928662
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto E 13th St. continue to Old St. Mary’s Church"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51181411743163,
+                          39.10985858112452
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -84.49967443943024,
+                  39.106607628680834
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "Old St. Mary's Church",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Head W on E 13th St toward Clay St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.5124739408493,
+                          39.10982528147548
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Walnut St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51345562934875,
+                          39.109687920256924
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto E Liberty St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51423078775406,
+                          39.112751428077544
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Vine St. and continue to St. Francis Seraph Church & Friary"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.5159313082695,
+                          39.11285756624693
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -84.51237201690674,
+                  39.109521421451255
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "St. Francis Seraph Church & Friary",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Head S on Vine St toward W Liberty St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51598763465881,
+                          39.113080247769055
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto W 14th St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.5153546333313,
+                          39.11058700701062
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto Elm St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.5185786485672,
+                          39.110104165550226
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto W 9th St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51726973056793,
+                          39.10488010894773
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto Plum St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51888442039488,
+                          39.10463866908289
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto W 8th St. and you arrive back at the Saint Peter in Chains Cathedral."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51869666576385,
+                          39.103926832944005
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -84.51622366905212,
+                  39.11305943644166
                 ]
               }
             }
