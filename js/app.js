@@ -1,6 +1,8 @@
 (function () {
+
   L.mapbox.accessToken = 'pk.eyJ1IjoiY291cnRuZXlzaW1vbnNlIiwiYSI6ImNqZGozNng0NjFqZWIyd28xdDJ2MXduNTcifQ.PoSFtqfsq1di1IDXzlN4PA';
 
+  // map options
   var options = {
     zoomSnap: .1,
     center: [39.2, -84.5], // cincinnati downtown
@@ -9,6 +11,7 @@
     // maxZoom: 15
   }
 
+  // create map
   var map = L.map('map', options);
 
   // request tiles and add to map
@@ -20,12 +23,8 @@
     ext: 'png'
   }).addTo(map);
 
-    // add route data to map
-    $.getJSON("data/trails.geojson", function (trails) {
-      drawMap(trails);
-    });
 
-  // trail names
+  // trail names for UI dropdown
   var layerInfo = {
     cathedralShort: {
       name: "Cathedral Trail 5 mi"
@@ -56,6 +55,113 @@
     }
   };
 
+  // first make sure all data are loaded using deferred requests
+  var trailsData = d3.json("data/trails.geojson"),
+      parishLocationsData = d3.csv("data/parish-data.csv")
+
+  // when all data ARE loaded, call the ready function
+  Promise.all([trailsData, parishLocationsData]).then(ready)
+
+
+  function ready(data) {
+
+    // all data are in GeoJSON now and ready
+    // separate out the data sets and parse CSV to GeoJSON
+    drawMap(data[0], parseCSV(data[1]));
+
+  }
+
+  function parseCSV(data) {
+
+    // build geojson structure
+    var geojson = {};
+
+    geojson.type = "FeatureCollection";
+    geojson.features = [];
+
+    // loop through data and create features
+    data.forEach(function (datum) {
+      var feature = {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": []
+        }
+      }
+      // add all data as props
+      feature.properties = datum;
+      // add coordinate info
+      feature.geometry.coordinates = [+datum.Longitude, +datum.Latitude]
+
+      // push each feature to geojson
+      geojson.features.push(feature)
+    })
+    // return complete geojson
+    return geojson
+  }
+
+  function drawMap(trailsData, parishLocationsData) {
+
+    var trailsLayer = L.geoJson(trailsData, {
+      // style trail lines
+      style: function (feature) {
+        return {
+          color: 'black',
+          weight: 1,
+          dashArray: [5, 5]
+        };
+      },
+      onEachFeature: function (feature, layer) {
+        // when mousing over a layer - doesn't seem to work well since you have to mouseover exactly the line - maybe remove?
+        layer.on('mouseover', function () {
+
+          // change the stroke color and bring that element to the front
+          layer.setStyle({
+            color: 'yellow',
+          }) //.bringToFront();
+        });
+
+        // on mousing off layer
+        layer.on('mouseout', function () {
+
+          // reset the layer style to its original stroke color
+          layer.setStyle({
+            color: 'black',
+          });
+        });
+      }
+    }).addTo(map);
+
+    // icon for churches
+    var churchIcon = L.icon({
+      iconUrl: "images/church.svg",
+      iconSize: [15, 15],
+    })
+
+    var parishesLayer = L.geoJson(parishLocationsData, {
+      pointToLayer: function(feature, ll) {
+        return L.marker(ll, {
+          icon: churchIcon
+        })
+      },
+      onEachFeature: function(feature, layer) {
+        var props = feature.properties;
+
+        var tooltip = "<h3><b>name:</b> " + props.name + 
+                      "</h3><p><b>Mass times:</b> " + props.Masses +
+                      "</p><p><b>Confession:</b>" + props.ConfessionTimes + "</p>"
+
+        layer.bindTooltip(tooltip)
+      }
+    }).addTo(map)
+
+    addUi(trailsLayer);
+    // show short cathedral trail as default
+    updateMap(trailsLayer, 'Cathedral Trail 5 mi');
+
+  } // end drawMap
+
+
   var dropdownList = '';
 
   // create dropdown list HTML
@@ -68,57 +174,6 @@
   // selectedTrail is one chosen by dropdown
   var selectedTrail = document.getElementById('trails').value;
   // console.log(selectedTrail);
-
-  // icon for churches
-  var churchIcon = L.icon({
-    iconUrl: "images/church.svg",
-    iconSize: [15, 15],
-  })
-
-  // add church points
-  // use JQuery to import XML data
-  $(document).ready(function () {
-    $.ajax({
-      type: "GET",
-      url: "data/parish-locations.xml",
-      dataType: "xml",
-      success: parseXML
-    });
-  });
-
-  var churchLayer = new L.layerGroup();
-
-  // add church data from XML file
-  function parseXML(xml) {
-    $(xml).find("marker").each(function () {
-      churchPoint = L.marker([$(this).attr("lat"), $(this).attr("lng")], {
-          icon: churchIcon
-        }).bindPopup("<h3><b>name:</b> " + $(this).attr("name") + "</h3><p><b>Mass times:</b> " + $(this).attr("Masses") +
-          "</p><p><b>Confession:</b>" + $(this).attr("ConfessionTimes") + "</p>")
-        .addTo(churchLayer);
-    });
-  }
-  churchLayer.addTo(map);
-
-  // trailsLayers = {};
-
-      // filter for selected trail - better to do this in the updateMap function?
-      // for (var layer in layerInfo) {
-      //   trailsLayers[layer] = L.geoJson(data, {
-      //     filter: function(feature) {
-      //       if (feature.properties.name == layerInfo[layer]["name"]) {
-      //         return feature;
-      //       }
-      //     },
-      //     style: function(feature) {
-      //       return {dashArray: [5,5]};
-      //     }
-      //   }).addTo(map);
-      // }
-
-  // console.log(trailsLayers);
-
-  // addUi(trailsLayers, layerInfo)
 
   // geolocation example from Mapbox
   var geolocate = document.getElementById('geolocate');
@@ -161,42 +216,7 @@
     geolocate.innerHTML = 'Position could not be found';
   });
 
-  function drawMap(trails) {
-    var dataLayer = L.geoJson(trails, {
-      // style trail lines
-      style: function (feature) {
-        return {
-          color: 'black',
-          weight: 1,
-          dashArray: [5, 5]
-        };
-      },
-      onEachFeature: function (feature, layer) {
-        // when mousing over a layer - doesn't seem to work well since you have to mouseover exactly the line - maybe remove?
-        layer.on('mouseover', function () {
 
-          // change the stroke color and bring that element to the front
-          layer.setStyle({
-            color: 'yellow',
-          }) //.bringToFront();
-        });
-
-        // on mousing off layer
-        layer.on('mouseout', function () {
-
-          // reset the layer style to its original stroke color
-          layer.setStyle({
-            color: 'black',
-          });
-        });
-      }
-    }).addTo(map);
-
-    addUi(dataLayer);
-    // show short cathedral trail as default
-    updateMap(dataLayer, 'Cathedral Trail 5 mi');
-
-  } // end drawMap
 
   function addUi(dataLayer) {
     // create the dropdown
