@@ -171,7 +171,7 @@
     // geolocation example from Mapbox - getting error "TypeError: myLayer.setGeoJSON is not a function"
     var geolocate = document.getElementById('geolocate');
 
-    var myLayer = L.featureGroup().addTo(map);
+    var myLayer = L.mapbox.featureLayer().addTo(map);
 
     // find user's location through browser
     if (!navigator.geolocation) {
