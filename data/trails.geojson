@@ -1069,8 +1069,996 @@
       "type": "Feature",
       "properties": {
         "name": "Cathedral Trail 11.4 mi",
-        "description": "This trail visits many of the same parishes along the 5 Mile trail, but also travels out of the Downtown basin and up onto the hilltop neighborhoods immediately near Downtown and includes many second generation parishes in the growth of the Archdiocese."
+        "description": "This trail visits many of the same parishes along the 5 Mile trail, but also travels out of the Downtown basin and up onto the hilltop neighborhoods immediately near Downtown and includes many second generation parishes in the growth of the Archdiocese.",
+        "stops": {
+          "type": "FeatureCollection",
+          "features": [
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "St. Peter in Chains Cathedral",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Head E on W 8th St toward Plum St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51957643032074,
+                          39.10381443710709
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Continue onto Garfield Place"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51706051826477,
+                          39.10415994966411
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Vine St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51383650302887,
+                          39.10461785526273
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto E 8th St. and continue to St. Louis Church"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51377749443054,
+                          39.10442012366458
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -84.5194798707962,
+                  39.10347724852111
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "St. Louis Church",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Head E on E 8th St toward Walnut St"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.51245248317719,
+                          39.10463866908289
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Sycamore St. and continue to St. Francis Xavier Church"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50897097587585,
+                          39.105152768490484
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [
+                  -84.51239347457886,
+                  39.104401391168615
+                ]
+              }
+            },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "St. Francis Xavier Church",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Head North on Sycamore St toward New St"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50859278440474,
+                          39.10366041289137
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto New St"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50862228870392,
+                          39.103804030076105
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto Broadway St"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50692981481552,
+                          39.104068368187434
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Gilbert Ave"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50707733631134,
+                          39.10468654084596
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Take the stairs over the highway"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50411081314087,
+                          39.10699475380195
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Van Meter St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50309157371521,
+                          39.106844899168586
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Continue onto Baum St"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50290381908417,
+                          39.10601653030816
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn left onto Monastery St"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50205624103546,
+                          39.10572514196238
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Turn right onto Celestial St."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.4997227191925,
+                          39.10796880115304
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Go past the Rookwood Pottery to the parking lot and stop at the flag pole. This point has a great view westward to downtown Cincinnati."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.50001776218414,
+                          39.1072403482066
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -84.50904875993729,
+                39.10358756348292
+              ]
+            }
+          },
+            {
+              "type": "Feature",
+              "properties": {
+                "description": "The Celestial",
+                "directions": {
+                  "type": "FeatureCollection",
+                  "features": [
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Leaving the parking lot, turn left down Celestial St.."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49988096952438,
+                          39.106978103302886
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Continue to the corner of Jerome St. and bear left"
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49875712394714,
+                          39.10646193588029
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "description": "Take the St Paul Place stairs (on the left) up the hill to the The (former) Holy Cross Monastery & Chapel."
+                      },
+                      "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                          -84.49856400489807,
+                          39.1065618395474
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -84.49967443943024,
+            39.106607628680834
+          ]
+        }
       },
+      {
+        "type": "Feature",
+        "properties": {
+          "description": "The (former) Holy Cross Monastery & Chapel",
+          "directions": {
+            "type": "FeatureCollection",
+            "features": [
+              {
+                "type": "Feature",
+                "properties": {
+                  "description": "Turn left onto Pavilion St"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    -84.49845671653748,
+                    39.10771904670525
+                  ]
+                }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                  "description": "Turn right onto Guido St. Holy Cross Immaculata Church will be on the right."
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    -84.49662208557129,
+                    39.107590006560464
+                  ]
+                 }
+              }
+           ]
+        }
+     },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -84.49864983558655,
+            39.107750266059625
+          ]
+             }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "description": "Holy Cross Immaculata Church",
+              "directions": {
+                "type": "FeatureCollection",
+                "features": [
+                  {
+                    "type": "Feature",
+                    "properties": {
+                      "description": "Head west, down the long stairs (These are the steps people pray on Good Friday)"
+                    },
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [
+                        -84.49671864509583,
+                        39.10676580909476
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "properties": {
+                      "description": "Turn left (down) onto St Gregory St"
+                    },
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [
+                        -84.4970029592514,
+                        39.10655559557235
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "properties": {
+                      "description": "Turn right onto Hill St"
+                    },
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [
+                        -84.49654430150986,
+                        39.1061310039716
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "properties": {
+                      "description": "Turn left at Celestial St. Take the stairs down"
+                    },
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [
+                        -84.49722021818161,
+                        39.10568351495749
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "properties": {
+                      "description": "Turn left onto Adams Crossing. Take the stairs"
+                    },
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [
+                        -84.49553579092026,
+                        39.104821830435384
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "properties": {
+                      "description": "Adams Crossing turns slightly right and becomes Parsons St"
+                    },
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [
+                        -84.49500471353531,
+                        39.105550308376706
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "properties": {
+                      "description": "Turn left onto Riverside Dr"
+                    },
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [
+                        -84.49370920658112,
+                        39.1059603340781
+                      ]
+                    }
+                  },
+                  {
+                    "type": "Feature",
+                    "properties": {
+                      "description": "Continue eastward to St. Rose Church (on the right)"
+                    },
+                    "geometry": {
+                      "type": "Point",
+                      "coordinates": [
+                        -84.4618821144104,
+                        39.124088578353124
+                      ]
+                    }
+                  }
+                ]
+              }
+         },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                -84.49643433094025,
+                39.10706135575898
+              ]
+           }
+        },
+        {
+      "type": "Feature",
+      "properties": {
+        "description": "St. Rose of Lima Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head west on Riverside Dr toward Lumber St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.46167290210724,
+          39.12402615410668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Collins Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.46939498186111,
+          39.12351219237507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left to stay on Collins Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.46916162967682,
+          39.12440069875547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto William Howard Taft Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.46926355361938,
+          39.126737396232464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Moorman Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.47646796703339,
+          39.127070312093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Madison Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4759476184845,
+          39.12958169540641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Continue West. St Francis De Sales will be on the rt."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.47646796703339,
+          39.12958169540641
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.46169435977936,
+          39.12372651695381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. Francis DeSales Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head south on Woodburn Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.47671473026276,
+          39.12991043655229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right (west) on E McMillan St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.48042154312134,
+          39.12538282859886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right at Victory parkway to St. Anthony of Padua Church"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.48447704315186,
+          39.125565936038186
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.47646528482437,
+          39.129877146379485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. Anthony of Padua Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Leaving the Church, turn to the left (south)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4844126701355,
+          39.12657301844604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto E McMillan St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.48449850082397,
+          39.12555761298309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Auburn Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.5083487033844,
+          39.12708903856341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Holy Name Church will be on the left"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.50838088989258,
+          39.12658134138115
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.48398351669312,
+          39.12658966431529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Holy Name Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head north on Auburn Ave toward E McMillan St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.5083701610565,
+          39.12652308081469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Cross E McMillan St and continue to William Howard Taft Road."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.50839161872862,
+          39.127118168618594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto William Howard Taft Road"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.50872153043747,
+          39.127698686491726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "William Howard Taft Road becomes Calhoun St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.51117038726805,
+          39.12794628943361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Continue West on Calhoun St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.51155662536621,
+          39.12798790328797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Where Calhoun St ends, turn left onto Clifton Ave."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.52071905136107,
+          39.12860378545801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right W McMillan St (going west)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.5212072134018,
+          39.127958773592496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. Monica / St. George Church will be on the right"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.5247745513916,
+          39.128195972191065
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.50788736343382,
+          39.12641488249199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. Monica / St. George Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn S onto Ravine St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.52541828155518,
+          39.12828752231367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right into the Fairview Park"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.52586889266968,
+          39.12457964716239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Continue up the hill to the viewing area on the left."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.52670037746428,
+          39.12329370548281
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.52442586421965,
+          39.12841652455718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Fairview Park",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Return back down the street to Ravine St."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.52671110630035,
+          39.123291624652005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right (south) onto Ravine St and go down the street"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.52588498592377,
+          39.12458797033307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Central Pkwy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.52622294425964,
+          39.12068013355144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Continue south on Central Pkwy to W 8th St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.52565431594847,
+          39.12047204244696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto W 8th St and you arrive back at the Saint Peter in Chains Cathedral."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.51870203018188,
+          39.10390601891365
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.52722072601318,
+          39.1232354421971
+        ]
+      }
+    }
+       ]
+      }
+    },
       "geometry": {
         "type": "LineString",
         "coordinates": [
@@ -1553,7 +2541,215 @@
       "type": "Feature",
       "properties": {
         "name": "East Side Trail - East Route",
-        "description": "Picture The theme for the East Side Trails is the journey to Ordination. The East Side Trails are Pilgrimages toward the Archdiocese of Cincinnati’s Seminary, The Athenaeum Of Ohio. These Pilgrimages are a physical manifestation of the spiritual journey of the men whom God has called to the ordained priesthood. The East Route trail begins at St Bernadette and continues to St Thomas More, Immaculate Heart of Mary, Guardian Angels and finally at the Athenaeum.   (Please note that trail route is along Beechmont Ave / Ohio Pike / St. Rt. 125 with has fast traffic and few sidewalks.) "
+        "description": "Picture The theme for the East Side Trails is the journey to Ordination. The East Side Trails are Pilgrimages toward the Archdiocese of Cincinnati’s Seminary, The Athenaeum Of Ohio. These Pilgrimages are a physical manifestation of the spiritual journey of the men whom God has called to the ordained priesthood. The East Route trail begins at St Bernadette and continues to St Thomas More, Immaculate Heart of Mary, Guardian Angels and finally at the Athenaeum.   (Please note that trail route is along Beechmont Ave / Ohio Pike / St. Rt. 125 with has fast traffic and few sidewalks.) ",
+        "stops": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St Bernadette Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head east on Locust Lake Rd toward Jenny Lind Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.22768235206604,
+          39.028689814929805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Locust Lake Rd turns slightly left and becomes Oak St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.22459781169891,
+          39.028489786894184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto OH-125/Beechmont St/Ohio Pike."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.22101974487305,
+          39.030327523180745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Continue to follow OH-125/Ohio Pike. St. Thomas More will be on the right."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.28079009056091,
+          39.064656483360395
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.22789692878723,
+          39.02794387416635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. Thomas More Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head west on OH-125 W/Ohio Pike"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.28221702575684,
+          39.064848078782056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Continue to follow OH-125 West. Immaculate Heart of Mary Church will be on the right"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.33959484100342,
+          39.07269471402591
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.28165912628174,
+          39.06521044261424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Immaculate Heart of Mary Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Head west on OH-125 W/Beechmont Ave."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3404746055603,
+          39.07271137262073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Go past the Athenaeum of Ohio. Guardian Angels will be on the left"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.37347650527954,
+          39.08197294240988
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3402224779129,
+          39.07328609173323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Guardian Angels Church",
+        "directions":
+        {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head southeast on Beechmont Ave toward Berkshire Rd. The Athenaeum of Ohio will be on the left"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.37697947025299,
+          39.08529581722371
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3774676322937,
+          39.08495437615001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "The Athenaeum Of Ohio"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.3718671798706,
+          39.08293900736551
+        ]
+      }
+    }
+  ]
+}
       },
       "geometry": {
         "type": "LineString",
@@ -1721,7 +2917,445 @@
       "type": "Feature",
       "properties": {
         "name": "West Side Trail - South Loop",
-        "description": "As the Archdiocese of Cincinnati’s population grew the people began to push up and out of the Ohio River valley and began to spread to the west.  The South Loop contains the oldest parishes on the West Side. The starting and ending point for the South Loop is St. Lawrence Church.  Other parishes along the route include; Holy Family Church, St. William Church, St. Teresa of Avila Catholic Church, St Antoninus Church and Our Lady of Lourdes Church."
+        "description": "As the Archdiocese of Cincinnati’s population grew the people began to push up and out of the Ohio River valley and began to spread to the west.  The South Loop contains the oldest parishes on the West Side. The starting and ending point for the South Loop is St. Lawrence Church.  Other parishes along the route include; Holy Family Church, St. William Church, St. Teresa of Avila Catholic Church, St Antoninus Church and Our Lady of Lourdes Church.",
+        "stops": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. Lawrence Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head SE, then East on Warsaw Ave."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.57323670387268,
+          39.111203041312535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Opposite Hawthorne Ave., is the old gateway to the previous location of the Athenaeum of Ohio."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.5619660615921,
+          39.10985025621373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Hawthorne Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.5619660615921,
+          39.109812794103064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto W 8th St. Holy Family Church will be on the left."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.56234693527222,
+          39.105762606245726
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.57288265228271,
+          39.111427809244056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Holy Family Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head west on W 8th St toward Hawthorne Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.56199556589127,
+          39.10575844354858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Elberon Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.56606984138489,
+          39.10597074079075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto W 8th St. Travel West on W 8th St. St. William Church will be on the right."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.56617176532745,
+          39.10564605063208
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.56197679042816,
+          39.10598114750186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. William Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head west on W 8th St."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.58652973175049,
+          39.10726948646902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Kreis Lane."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.58936482667923,
+          39.10749218564813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto St Lawrence Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.5892333984375,
+          39.11049127146675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Schiff Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.590402841568,
+          39.11062030629975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Glenway Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.59014534950256,
+          39.113180142055036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Travel NW on Glenway Ave. St. Teresa of Avila will be on the left. (The old church building is on Overlook Ave.)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.59053158760071,
+          39.113379930202136
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.5863527059555,
+          39.10751924250981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. Teresa of Avila Catholic Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head NW on Glenway Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.59829926490784,
+          39.11754205444378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Cleves Warsaw Ave / Cleves Warsaw Pk. Continue to follow Cleves Warsaw Pk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.59912538528442,
+          39.11841606929941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Linneman Rd. St Antoninus Church will be on the right."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.6253252029419,
+          39.11941493014407
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.59883034229279,
+          39.11723822769253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St Antoninus Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Head North on Linneman Rd toward Julmar Dr"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.62501406669617,
+          39.12241142771046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Turn right onto Julmar Dr"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.62493360042572,
+          39.12314804717818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Turn left onto Sylved Ln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.62219774723053,
+          39.12364744582588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Continue straight onto Muddy Creek Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.62152183055878,
+          39.134063262180014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Turn left onto Rosebud Dr. Our Lady of Lourdes Church will be on the right"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.61594820022583,
+          39.13668465927993
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.62444543838501,
+          39.12254460242191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Our Lady of Lourdes Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head NE on Lumardo Ave toward Glenway Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.61704522371292,
+          39.13800572321448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Glenway Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.61586773395538,
+          39.13861527664124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Stay on Glenway Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.61550831794739,
+          39.13823248602721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "SE onto Warsaw Ave. St Lawrence Church, the starting point, will be on the left."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.57626223564148,
+          39.11392934468607
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.6173107624054,
+          39.137616688063794
+        ]
+      }
+    }
+  ]
+}
       },
       "geometry": {
         "type": "LineString",
@@ -1985,7 +3619,349 @@
       "type": "Feature",
       "properties": {
         "name": "West Side Trail - North Loop",
-        "description": "Picture The West Side - North Loop Trail is in the western part of Cincinnati.  The starting and ending point is Our Lady of Visitation Church. Other parishes along the route include; St Jude Church,  St Aloysius Gonzaga Church, St Martin of Tours Church and St Catharine of Siena Church."
+        "description": "Picture The West Side - North Loop Trail is in the western part of Cincinnati.  The starting and ending point is Our Lady of Visitation Church. Other parishes along the route include; St Jude Church,  St Aloysius Gonzaga Church, St Martin of Tours Church and St Catharine of Siena Church.",
+        "stops": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Our Lady of Visitation Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head northeast on South Rd."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.66897010803223,
+          39.146528590223795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Bridgetown Rd. and walk East. St. Jude Church will be on the left"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.66643810272217,
+          39.153459289666365
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.66814398765564,
+          39.14634969758927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St Jude Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head northeast on Bridgetown Rd. St. Aloysius Gonzaga will be on the Left."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.64386463165283,
+          39.159449260249616
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.6441113948822,
+          39.15990888623087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St Aloysius Gonzaga Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head east on Bridgetown Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.62371587753296,
+          39.157943496183876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Slight right onto Harrison Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.61762189865112,
+          39.157893580801115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Glenmore Ave, walk South. St. Martin of Tours Church will be on the right"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.61107730865479,
+          39.15628795043201
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.62365150451659,
+          39.158272104903084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St Martin of Tours Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn South on Glenmore Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.61210727691649,
+          39.15387943617646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Montana Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.61278855800629,
+          39.14932424859903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Harrison Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.5982563495636,
+          39.1485546215821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Kling Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.5974838733673,
+          39.14761025693251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Mignon Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.59600329399109,
+          39.14773714366857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Slight left onto Fischer Pl. St. Catharine of Siena Church will be on the left."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.59365367889404,
+          39.14618536558248
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.61276710033417,
+          39.15392103470435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St Catharine of Siena Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Head west on Fischer Pl toward Wunder Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.59208190441132,
+          39.146166644190274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Turn right onto Harrison Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.59516108036041,
+          39.1452846529586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Turn left onto Ratterman Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.59545612335205,
+          39.145550915627084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Turn right onto Lischer Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.5959147810936,
+          39.144375607977736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Turn left onto Boudinot Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.60384607315063,
+          39.144747964206346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Turn right onto Werk Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.6042537689209,
+          39.140487592049666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "directions": "Turn right onto South Rd Our Lady of Visitation Church, the starting point, will be on the right."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.66974258422852,
+          39.144581548258216
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.59202557802199,
+          39.14644538440385
+        ]
+      }
+    }
+  ]
+}
       },
       "geometry": {
         "type": "LineString",
@@ -2193,7 +4169,733 @@
       "type": "Feature",
       "properties": {
         "name": "Central Trail",
-        "description": "Picture The Central Trail is in the downtown Dayton area. It visits eight parishes and the chapel at the University of Dayton. Part of the hike will be along the Great Miami River.  The Churches along the Central Trail are Emmanuel Church, Sacred Heart Church, St Joseph Church, Holy Trinity Church, Holy Family, St. Anthony of Padua Church, St. Mary Church, the Chapel of the Immaculate Conception at the University of Dayton and the Holy Angels Church.  The trail is a loop trail starting and ending at the Emmanuel Church."
+        "description": "Picture The Central Trail is in the downtown Dayton area. It visits eight parishes and the chapel at the University of Dayton. Part of the hike will be along the Great Miami River.  The Churches along the Central Trail are Emmanuel Church, Sacred Heart Church, St Joseph Church, Holy Trinity Church, Holy Family, St. Anthony of Padua Church, St. Mary Church, the Chapel of the Immaculate Conception at the University of Dayton and the Holy Angels Church.  The trail is a loop trail starting and ending at the Emmanuel Church.",
+        "stops": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Emmanuel Catholic Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head east on Franklin St toward S Ludlow St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.19353246688843,
+          39.75304659149285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto S Ludlow St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.19196337461472,
+          39.753287857155556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto W 6th St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.19250249862671,
+          39.7552117659203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Continue North on S Wilkinson St Arriving at Sacred Heart Church"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.19427275657654,
+          39.75544271384221
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.1936182975769,
+          39.75333528534883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Sacred Heart Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head east on W 4th St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.1952222585678,
+          39.75748409483432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto S St Clair St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.1879105567932,
+          39.75868208924303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Between 2nd St and 3rd St is Cooper Park. Across from the park is a parking lot. It formally held a building where Masses were held."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18858110904694,
+          39.76113780953998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Ice Ave. Masses were first held at the Conway family home in the Ice Alley."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.1888815164566,
+          39.76221821625552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto N Patterson Blvd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18715953826904,
+          39.76248625346515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto E 2nd St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18696910142899,
+          39.761814096644045
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.19528663158417,
+          39.75772946888009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St Joseph Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head west on E 2nd St toward Madison St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18480455875397,
+          39.76216460868837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Madison St (South)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18513715267181,
+          39.762111001079525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left (East) onto E 3rd St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18475091457367,
+          39.76065327048824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right (South) onto Wayne Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18557703495026,
+          39.7605151246872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto E 5th St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18210357427597,
+          39.75713562094764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Bainbridge St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18029308319092,
+          39.75742429766548
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18489575386047,
+          39.76240790423487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Holy Trinity Catholic Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto E 5th St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18028771877289,
+          39.75742635963768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head east to S Findlay St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.15620148181915,
+          39.76137286129871
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18008387088776,
+          39.75772328299051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Holy Family Catholic Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head west on E 5th St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.1558313369751,
+          39.7614429642995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Linden Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.16158735752106,
+          39.76048625836542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Sharp right onto Xenia Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.15158271789551,
+          39.75311257876661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Carlisle Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.15185630321503,
+          39.7530754609329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right (West) onto St Charles Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.15227204561234,
+          39.74882327449049
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.15592253208159,
+          39.76171100452676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. Anthony Catholic Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head north on Bowen St toward Xenia Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.15453851222992,
+          39.74829946615106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left (West) onto Xenia Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.15408253669739,
+          39.75302597045682
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.15415227413177,
+          39.74853043724832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. Mary Catholic Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head west on Xenia Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.16795492172241,
+          39.75267541190014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left (South) onto Fillmore St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.16895002126694,
+          39.75264860440768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Wyoming St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.16945695877075,
+          39.747441566724824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Wayne Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.17217940092085,
+          39.74753643112902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Medford St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.16723608970642,
+          39.742846673557644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto E Stewart St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.16800320148468,
+          39.7399303660792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Zehler Ave."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.17800784111023,
+          39.74123385115329
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.16804075241089,
+          39.75308783354635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "The Chapel of the Immaculate Conception",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head west on University Circle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.1778576374054,
+          39.73940236510908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto L St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.179767370224,
+          39.739290989387804
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.17757332324982,
+          39.73926211417141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Holy Angels Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head west on L St toward Brown St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18134719133377,
+          39.73895273609381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Brown St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18172806501387,
+          39.73890529799911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto E Stewart St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18211698532104,
+          39.74089560739528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Great Miami River Recreational Trail/S Patterson Blvd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.1918185353279,
+          39.740056178213564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Great Miami River Recreational Trail. Continue to follow Great Miami River Recreational Trail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.19178366661072,
+          39.74065636080792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Slight right toward W Washington St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.19702470302582,
+          39.75070812666729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto W Washington St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.1970032453537,
+          39.75088134900633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto S Perry St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.19438004493713,
+          39.75187118258785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Franklin St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.19494867324829,
+          39.75279089020999
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.18140351772308,
+          39.73937761496435
+        ]
+      }
+    }
+  ]
+}
       },
       "geometry": {
         "type": "LineString",
@@ -2445,7 +5147,259 @@
       "type": "Feature",
       "properties": {
         "name": "North Trail",
-        "description": "The western route of the North Trail is in the northern portion of the Archdiocese in the area  known as \"The Land of the Cross - Tipped Churches.\"  This trail is mostly along country roads.  It begins at St. Henry Church in St. Henry, Ohio and includes St. Francis, Nativity of the Blessed Virgin Mary, St. Rose, St. John the Baptist and concludes at Maria Stein Shrine of the Holy Relics."
+        "description": "The western route of the North Trail is in the northern portion of the Archdiocese in the area  known as \"The Land of the Cross - Tipped Churches.\"  This trail is mostly along country roads.  It begins at St. Henry Church in St. Henry, Ohio and includes St. Francis, Nativity of the Blessed Virgin Mary, St. Rose, St. John the Baptist and concludes at Maria Stein Shrine of the Holy Relics.",
+        "stops": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St Henry Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head east on OH-119 E/E Main St toward S Walnut St. Continue to follow OH-119 E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.6377921104431,
+          40.417727345480294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Fleetfoot Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.60996955633163,
+          40.40708120828698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Fort Recovery-Minster Rd St. Francis will be on the left."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.61002051830292,
+          40.39224978041771
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.6377921104431,
+          40.417727345480294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. Francis Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head east on Fort Recovery-Minster Rd toward Cranberry Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.58180904388428,
+          40.392384607725525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto US-127 N"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.57172393798828,
+          40.39249900644163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Stelzer Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.5716917514801,
+          40.400032551179976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto OH-119 E Nativity of the Blessed Virgin Mary will be on the right."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.56046938896179,
+          40.40747538841224
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.58175003528595,
+          40.39291165733854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "The Nativity of the Blessed Virgin Mary",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head east on OH-119 E St Rose Church will be on the right."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.55032259225845,
+          40.40748764267966
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.55056667327881,
+          40.406858587403434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St Rose Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head east on OH-119 E toward Clune Stucke Rd. St. John the Baptist will be on the left"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.51545119285583,
+          40.407663286934046
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.51504349708557,
+          40.40731199796687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. John the Baptist Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head west on OH-119 W toward St Johns Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.47355508804321,
+          40.40777765969047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto St Johns Rd The Maria Stein Shrine will be on the left."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.47429269552231,
+          40.40759997336029
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.47345316410065,
+          40.407971684457756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Maria Stein Shrine of the Holy Relics"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.47562038898468,
+          40.41603649279436
+        ]
+      }
+    }
+  ]
+}
+
       },
       "geometry": {
         "type": "LineString",
