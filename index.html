@@ -168,7 +168,7 @@
 
     // addUi(trailsLayers, layerInfo)
 
-    // geolocation example from Mapbox - getting error "TypeError: myLayer.setGeoJSON is not a function"
+    // geolocation example from Mapbox
     var geolocate = document.getElementById('geolocate');
 
     var myLayer = L.mapbox.featureLayer().addTo(map);
@@ -195,7 +195,7 @@
                 coordinates: [e.latlng.lng, e.latlng.lat]
             },
             properties: {
-                'title': 'Here I am!',
+                'title': 'your location',
                 'marker-color': '#ff8888',
                 'marker-symbol': 'star'
             }
