@@ -5687,7 +5687,484 @@
       "type": "Feature",
       "properties": {
         "name": "East Side Trail - West Route Option 1",
-        "description": "The West Route Trail is similar in concept to the East Route.  The Trail is a loop trail. It begins at the former Seminary's location which is now called the Our Lady of the Holy Spirit Center.  From there the trail goes to Holy Trinity Church, the Church of the Nativity of our Lord, St Cecila, St Mary Church (Hyde Park), Christ the King parish then returns to the starting point.  In the future, once a pedestrian bridge is completed over the Little Miami River, the trail will continue to the current Seminary, The Athenaeum Of Ohio."
+        "description": "The West Route Trail is similar in concept to the East Route.  The Trail is a loop trail. It begins at the former Seminary's location which is now called the Our Lady of the Holy Spirit Center.  From there the trail goes to Holy Trinity Church, the Church of the Nativity of our Lord, St Cecila, St Mary Church (Hyde Park), Christ the King parish then returns to the starting point.  In the future, once a pedestrian bridge is completed over the Little Miami River, the trail will continue to the current Seminary, The Athenaeum Of Ohio.",
+        "stops": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Our Lady of the Holy Spirit Center",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head SW on Moeller Ave toward Drex Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44772005081175,
+          39.17334901848436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Drex Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44847375154495,
+          39.17188721925442
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44729089736938,
+          39.17274184525343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Holy Trinity Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head SE on Drex Ave toward Montgomery Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44735795259476,
+          39.17113239495335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Montgomery Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44680273532867,
+          39.17076641661822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Woodford Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.42889094352722,
+          39.18172414711328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Ridge Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.42729234695435,
+          39.18080933552267
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44711923599243,
+          39.171302906936354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Church of the Nativity of Our Lord",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head south on Ridge Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.42733526229857,
+          39.180493306933855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right to on Madison Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4213056564331,
+          39.158521680120025
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.42635893821716,
+          39.18043093270239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Saint Cecilia Catholic Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head southwest on Madison Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43001210689543,
+          39.15317017749202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Allston St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43256825208664,
+          39.15171835883049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Isabella Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43222492933273,
+          39.15149787945128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Paxton Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43273991346359,
+          39.14465019488452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left to stay on Paxton Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4334077835083,
+          39.14435064547857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Erie Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43397104740143,
+          39.138715134720016
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4296446442604,
+          39.15284778481766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St Mary Church - Hyde Park",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head south on Shady Ln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43779319524765,
+          39.13875674221104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Observatory Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43810701370239,
+          39.13724013327711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Linwood Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43967342376709,
+          39.13730462622881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Go straight thru Mt Lookout square to stay on Linwood Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4303286075592,
+          39.129848017465385
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4381096959114,
+          39.138769224453554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Our Lord Christ the King Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head northwest on Linwood Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.42949175834656,
+          39.1273969842516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right to stay on Linwood Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43018913269043,
+          39.12820013356283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Observatory Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43971633911133,
+          39.13731918914519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto OH-561 N/Edwards Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44348752498627,
+          39.13755427580745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Edmondson Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44254875183105,
+          39.14814276366743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Continue onto Smith Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44527924060822,
+          39.149515614010255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left on Sherman Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.45347338914871,
+          39.16005862798351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Montgomery Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.45628970861435,
+          39.160405944432796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Moeller Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44868296384811,
+          39.170100996583855
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43037152290344,
+          39.12725133443174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Our Lady of the Holy Spirit Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44729089736938,
+          39.17274184525343
+        ]
+      }
+    }
+  ]
+}
       },
       "geometry": {
         "type": "LineString",
@@ -6031,7 +6508,672 @@
       "type": "Feature",
       "properties": {
         "name": "East Side Trail - West Route Option 2",
-        "description": "The West Route Trail is similar in concept to the East Route.  The Trail is a loop trail. It begins at the former Seminary's location which is now called the Our Lady of the Holy Spirit Center.  From there the trail goes to Holy Trinity Church, the Church of the Nativity of our Lord, St Cecila, St Mary Church (Hyde Park), Christ the King parish then returns to the starting point.  In the future, once a pedestrian bridge is completed over the Little Miami River, the trail will continue to the current Seminary, The Athenaeum Of Ohio."
+        "description": "The West Route Trail is similar in concept to the East Route.  The Trail is a loop trail. It begins at the former Seminary's location which is now called the Our Lady of the Holy Spirit Center.  From there the trail goes to Holy Trinity Church, the Church of the Nativity of our Lord, St Cecila, St Mary Church (Hyde Park), Christ the King parish then returns to the starting point.  In the future, once a pedestrian bridge is completed over the Little Miami River, the trail will continue to the current Seminary, The Athenaeum Of Ohio.",
+        "stops": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Our Lady of the Holy Spirit Center",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head SW on Moeller Ave toward Drex Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44772005081175,
+          39.17334901848436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Drex Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44847375154495,
+          39.17188721925442
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44729089736938,
+          39.17274184525343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Holy Trinity Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head SE on Drex Ave toward Montgomery Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44735795259476,
+          39.17113239495335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Montgomery Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44680273532867,
+          39.17076641661822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Woodford Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.42889094352722,
+          39.18172414711328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Ridge Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.42729234695435,
+          39.18080933552267
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44711923599243,
+          39.171302906936354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Church of the Nativity of Our Lord",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head south on Ridge Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.42733526229857,
+          39.180493306933855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right to on Madison Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4213056564331,
+          39.158521680120025
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.42635893821716,
+          39.18043093270239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Saint Cecilia Catholic Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head southwest on Madison Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43001210689543,
+          39.15317017749202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Allston St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43256825208664,
+          39.15171835883049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Isabella Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43222492933273,
+          39.15149787945128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Paxton Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43273991346359,
+          39.14465019488452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left to stay on Paxton Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4334077835083,
+          39.14435064547857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Erie Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43397104740143,
+          39.138715134720016
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4296446442604,
+          39.15284778481766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St Mary Church - Hyde Park",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head south on Shady Ln"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43779319524765,
+          39.13875674221104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Observatory Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43810701370239,
+          39.13724013327711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Linwood Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43967342376709,
+          39.13730462622881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Go straight thru Mt Lookout square to stay on Linwood Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4303286075592,
+          39.129848017465385
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4381096959114,
+          39.138769224453554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Our Lord Christ the King Church",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head SE on Linwood Ave toward Ellison Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.42952930927275,
+          39.12741362992612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Continue onto Beechmont Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4185134768486,
+          39.123019035285395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left toward Beechmont Ct"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4181165099144,
+          39.12068221445939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Take the stairs"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.41772758960724,
+          39.12057608807604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Slight right onto Beechmont Ct"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.41740036010742,
+          39.120405453163706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Beechmont Cir"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.41569447517395,
+          39.11952730110293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Wilmer Ct"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.41593050956726,
+          39.11780842202459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Wilmer Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.41596806049347,
+          39.11620187727421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Airport Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4294488430023,
+          39.10440555394594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Carrel St"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43207204341888,
+          39.10846830739362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Eastern Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43199425935745,
+          39.10852242035716
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43037152290344,
+          39.12725133443174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "St. Stephen - Cincinnati",
+        "directions": {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Head NW on Eastern Ave toward Donham Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43559646606445,
+          39.111552680007364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Delta Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43974047899246,
+          39.116522356742436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Slight left to stay on Delta Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43080067634583,
+          39.12833329733037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Linwood Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43033933639526,
+          39.129854259376565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Observatory Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.43971365690231,
+          39.137310867479044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto OH-561 N/Edwards Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44348484277725,
+          39.13755427580745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Edmondson Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44254606962204,
+          39.14814276366743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Continue onto Smith Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44533824920654,
+          39.14957385555387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Sherman Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.45347338914871,
+          39.16005446849468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn right onto Montgomery Rd"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.45628970861435,
+          39.16040802416684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Turn left onto Moeller Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44868564605711,
+          39.170100996583855
+        ]
+      }
+    }
+  ]
+}
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.4352263212204,
+          39.11183988192329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Our Lady of the Holy Spirit Center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.44729089736938,
+          39.17274184525343
+        ]
+      }
+    }
+  ]
+}
+
       },
       "geometry": {
         "type": "LineString",
