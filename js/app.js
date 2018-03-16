@@ -1,6 +1,6 @@
 (function () {
 
-  L.mapbox.accessToken = 'pk.eyJ1IjoiY291cnRuZXlzaW1vbnNlIiwiYSI6ImNqZGozNng0NjFqZWIyd28xdDJ2MXduNTcifQ.PoSFtqfsq1di1IDXzlN4PA';
+  // L.mapbox.accessToken = 'pk.eyJ1IjoiY291cnRuZXlzaW1vbnNlIiwiYSI6ImNqZGozNng0NjFqZWIyd28xdDJ2MXduNTcifQ.PoSFtqfsq1di1IDXzlN4PA';
 
   // map options
   var options = {
@@ -15,14 +15,11 @@
   var map = L.map('map', options);
 
   // request tiles and add to map
-  var Stamen_Terrain = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}', {
-    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    subdomains: 'abcd',
-    minZoom: 0,
-    maxZoom: 18,
-    ext: 'png'
+  var CartoDB_Positron = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+  	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+  	subdomains: 'abcd',
+  	maxZoom: 19
   }).addTo(map);
-
 
   // trail names for UI dropdown
   var layerInfo = {
@@ -178,7 +175,7 @@
   // geolocation example from Mapbox
   var geolocate = document.getElementById('geolocate');
 
-  var myLayer = L.mapbox.featureLayer().addTo(map);
+  var myLayer = L.featureGroup().addTo(map);
 
   // find user's location through browser
   if (!navigator.geolocation) {
@@ -195,18 +192,7 @@
   map.on('locationfound', function (e) {
     map.fitBounds(e.bounds);
 
-    myLayer.setGeoJSON({
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [e.latlng.lng, e.latlng.lat]
-      },
-      properties: {
-        'title': 'your location',
-        'marker-color': '#ff8888',
-        'marker-symbol': 'star'
-      }
-    });
+    locationMarker = new L.circleMarker([e.latlng.lat, e.latlng.lng]).addTo(myLayer);
 
   });
 
