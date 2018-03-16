@@ -147,7 +147,7 @@
       onEachFeature: function(feature, layer) {
         var props = feature.properties;
 
-        var tooltip = "<h3><b>name:</b> " + props.name + 
+        var tooltip = "<h3><b>name:</b> " + props.name +
                       "</h3><p><b>Mass times:</b> " + props.Masses +
                       "</p><p><b>Confession:</b>" + props.ConfessionTimes + "</p>"
 
@@ -269,7 +269,7 @@
             "' stop=" + i + ">" + stopsProps.description + "</li>";
 
           for (var j = 0; j < stopsProps.directions.features.length; j++) {
-            // console.log(stopsProps.directions.features[i].properties.description);
+            // console.log(stopsProps.directions.features[j].properties.description);
             if (j == 0) {
               directionsText += "<ul class='txt-ul'>"
             }
