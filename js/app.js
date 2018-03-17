@@ -105,7 +105,7 @@
         return {
           color: 'black',
           weight: 1,
-          dashArray: [5, 5]
+          // dashArray: [5, 5]
         };
       },
       onEachFeature: function (feature, layer) {
@@ -114,7 +114,7 @@
 
           // change the stroke color and bring that element to the front
           layer.setStyle({
-            color: 'yellow',
+            color: 'yellow'
           }) //.bringToFront();
         });
 
@@ -123,7 +123,7 @@
 
           // reset the layer style to its original stroke color
           layer.setStyle({
-            color: 'black',
+            color: 'black'
           });
         });
       }
@@ -131,24 +131,28 @@
 
     // icon for churches
     var churchIcon = L.icon({
-      iconUrl: "images/church.svg",
-      iconSize: [15, 15],
+      iconUrl: "images/catholic_church.svg",
+      iconSize: [20, 20],
     })
 
     var parishesLayer = L.geoJson(parishLocationsData, {
       pointToLayer: function(feature, ll) {
         return L.marker(ll, {
-          icon: churchIcon
+          icon: churchIcon,
+          // attribution: "<a href='https://thenounproject.com/term/catholic-church/392197' target='_blank'>Catholic Church by Anatoly Ivanov</a>"
         })
       },
       onEachFeature: function(feature, layer) {
         var props = feature.properties;
 
         var tooltip = "<h3><b>name:</b> " + props.name +
-                      "</h3><p><b>Mass times:</b> " + props.Masses +
-                      "</p><p><b>Confession:</b>" + props.ConfessionTimes + "</p>"
+                      "</h3><p><b>Mass times:</b> " + props.masses + "</p>" +
+                      "<p><b>Confession: </b>" + props.ConfessionTimes + "</p>" +
+                      "<p><b>Phone Number: </b>" + props.phone + "</p>"
 
-        layer.bindTooltip(tooltip)
+        layer.bindTooltip(tooltip, {
+          className: 'tooltip'
+        })
       }
     }).addTo(map)
 
@@ -190,9 +194,11 @@
 
   // zoom and center the map on position and add marker
   map.on('locationfound', function (e) {
-    map.fitBounds(e.bounds);
+    map.flyToBounds(e.bounds);
 
-    locationMarker = new L.circleMarker([e.latlng.lat, e.latlng.lng]).addTo(myLayer);
+    locationMarker = new L.circleMarker([e.latlng.lat, e.latlng.lng], {
+      radius: 6
+    }).addTo(myLayer);
 
   });
 
@@ -279,9 +285,9 @@
     // add click function to directions list
     $('li').click(function () {
       var position = ($(this).attr('data-position').split(","));
-      console.log($(this).attr('data-position').split(","));
-      var zoom = 16;
-      map.setView(position, zoom, {
+      // console.log($(this).attr('data-position').split(","));
+      var zoom = 14;
+      map.flyTo(position, zoom, {
         animation: true
       }); // set map view to zoom to clicked element
 
