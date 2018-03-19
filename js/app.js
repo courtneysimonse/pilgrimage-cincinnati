@@ -201,7 +201,12 @@
     // when control is added
     selectControl.onAdd = function (map) {
       // get the element with id attribute of ui-controls
-      return L.DomUtil.get("ui-controls");
+      var controls = L.DomUtil.get("ui-controls");
+
+      L.DomEvent.disableClickPropagation(controls);
+      L.DomEvent.disableScrollPropagation(controls);
+
+      return controls;
     }
     // add the control to the map
     selectControl.addTo(map);
@@ -210,7 +215,7 @@
       .change(function () {
         // code executed here when change event occurs
         selectedTrail = this.value;
-        console.log(selectedTrail);
+        // console.log(selectedTrail);
         // call updateMap function
         updateMap(dataLayer, parishesLayer, selectedTrail);
 
@@ -227,6 +232,12 @@
       // console.log(layer);
       if (layer.feature.properties["name"] == selectedTrail) {
         trail = layer;
+
+        // show trail if selected
+        layer.setStyle({
+          opacity: 1
+        })
+
         // console.log(layer.feature.properties.stops);
         // add description of trail
         $("#description").html("<div class='txt-m txt-bold'>Trail: " + selectedTrail + "</div>" +
@@ -263,10 +274,15 @@
         $("#directions").html(stopsText)
 
       } else {
-        // want to only show selected trail - not sure how to do this
-        // layer.remove();
+        // want to only show selected trail
+        layer.setStyle({
+          opacity: 0
+        })
       }
     }).addTo(map);
+
+    var trailBounds = trail.getBounds().pad(.1);
+    map.flyToBounds(trailBounds)
 
     // add click function to directions list
     $('li').click(function () {
@@ -279,7 +295,6 @@
 
     parishesLayer.eachLayer(function(church) {
       // highlight church icon if on selected trail
-      var trailBounds = trail.getBounds().pad(.02);
       if (trailBounds.contains(church.getLatLng())) {
         church.setIcon(L.icon({
           iconUrl: "images/church_highlight.svg",
