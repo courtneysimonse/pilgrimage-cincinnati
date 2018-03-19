@@ -2215,7 +2215,7 @@
 			"type": "Feature",
 			"properties": {
 				"name": "East Side Trail - East Route",
-				"description": "Picture The theme for the East Side Trails is the journey to Ordination. The East Side Trails are Pilgrimages toward the Archdiocese of Cincinnati’s Seminary, The Athenaeum Of Ohio. These Pilgrimages are a physical manifestation of the spiritual journey of the men whom God has called to the ordained priesthood. The East Route trail begins at St Bernadette and continues to St Thomas More, Immaculate Heart of Mary, Guardian Angels and finally at the Athenaeum.   (Please note that trail route is along Beechmont Ave / Ohio Pike / St. Rt. 125 with has fast traffic and few sidewalks.) ",
+				"description": "The theme for the East Side Trails is the journey to Ordination. The East Side Trails are Pilgrimages toward the Archdiocese of Cincinnati’s Seminary, The Athenaeum Of Ohio. These Pilgrimages are a physical manifestation of the spiritual journey of the men whom God has called to the ordained priesthood. The East Route trail begins at St Bernadette and continues to St Thomas More, Immaculate Heart of Mary, Guardian Angels and finally at the Athenaeum.   (Please note that trail route is along Beechmont Ave / Ohio Pike / St. Rt. 125 with has fast traffic and few sidewalks.) ",
 				"stops": {
 					"type": "FeatureCollection",
 					"features": [{
@@ -3147,7 +3147,7 @@
 			"type": "Feature",
 			"properties": {
 				"name": "West Side Trail - North Loop",
-				"description": "Picture The West Side - North Loop Trail is in the western part of Cincinnati.  The starting and ending point is Our Lady of Visitation Church. Other parishes along the route include; St Jude Church,  St Aloysius Gonzaga Church, St Martin of Tours Church and St Catharine of Siena Church.",
+				"description": "The West Side - North Loop Trail is in the western part of Cincinnati.  The starting and ending point is Our Lady of Visitation Church. Other parishes along the route include; St Jude Church,  St Aloysius Gonzaga Church, St Martin of Tours Church and St Catharine of Siena Church.",
 				"stops": {
 					"type": "FeatureCollection",
 					"features": [{
@@ -3617,7 +3617,7 @@
 			"type": "Feature",
 			"properties": {
 				"name": "Central Trail",
-				"description": "Picture The Central Trail is in the downtown Dayton area. It visits eight parishes and the chapel at the University of Dayton. Part of the hike will be along the Great Miami River.  The Churches along the Central Trail are Emmanuel Church, Sacred Heart Church, St Joseph Church, Holy Trinity Church, Holy Family, St. Anthony of Padua Church, St. Mary Church, the Chapel of the Immaculate Conception at the University of Dayton and the Holy Angels Church.  The trail is a loop trail starting and ending at the Emmanuel Church.",
+				"description": "The Central Trail is in the downtown Dayton area. It visits eight parishes and the chapel at the University of Dayton. Part of the hike will be along the Great Miami River.  The Churches along the Central Trail are Emmanuel Church, Sacred Heart Church, St Joseph Church, Holy Trinity Church, Holy Family, St. Anthony of Padua Church, St. Mary Church, the Chapel of the Immaculate Conception at the University of Dayton and the Holy Angels Church.  The trail is a loop trail starting and ending at the Emmanuel Church.",
 				"stops": {
 					"type": "FeatureCollection",
 					"features": [{

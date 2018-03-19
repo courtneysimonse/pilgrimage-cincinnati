@@ -103,29 +103,9 @@
       // style trail lines
       style: function (feature) {
         return {
-          color: 'black',
-          weight: 1,
-          // dashArray: [5, 5]
+          color: '#EF6527',
+          weight: 2
         };
-      },
-      onEachFeature: function (feature, layer) {
-        // when mousing over a layer - doesn't seem to work well since you have to mouseover exactly the line - maybe remove?
-        layer.on('mouseover', function () {
-
-          // change the stroke color and bring that element to the front
-          layer.setStyle({
-            color: 'yellow'
-          }) //.bringToFront();
-        });
-
-        // on mousing off layer
-        layer.on('mouseout', function () {
-
-          // reset the layer style to its original stroke color
-          layer.setStyle({
-            color: 'black'
-          });
-        });
       }
     }).addTo(map);
 
@@ -139,7 +119,7 @@
       pointToLayer: function(feature, ll) {
         return L.marker(ll, {
           icon: churchIcon,
-          // attribution: "<a href='https://thenounproject.com/term/catholic-church/392197' target='_blank'>Catholic Church by Anatoly Ivanov</a>"
+          attribution: "<a href='https://thenounproject.com/term/catholic-church/392197' target='_blank'>Catholic Church by Anatoly Ivanov</a>"
         })
       },
       onEachFeature: function(feature, layer) {
@@ -235,18 +215,18 @@
   } // end addUi
 
   function updateMap(dataLayer, selectedTrail) {
-    // console.log(dataLayer.getLayers());
+    console.log(dataLayer);
     // dataLayer.removeFrom(map);
     dataLayer.eachLayer(function (layer) {
-      // console.log(layer);
+      console.log(layer);
       if (layer.feature.properties["name"] == selectedTrail) {
         // console.log(layer);
-        console.log(layer.feature.properties.stops);
+        // console.log(layer.feature.properties.stops);
         // add description of trail
-        $("#description").html("<h2>Trail: " + selectedTrail + "</h3>" +
+        $("#description").html("<div class='txt-m txt-bold'>Trail: " + selectedTrail + "</div>" +
           layer.feature.properties["description"])
 
-        var stopsText = "<h2>Directions</h2><ol class='txt-ol'>"
+        var stopsText = "<div class='txt-m txt-bold'>Directions</div><ol class='txt-ol'>"
         var directionsText = ""
 
         // console.log(layer.feature.properties.stops.features.length-1);
@@ -287,9 +267,7 @@
       var position = ($(this).attr('data-position').split(","));
       // console.log($(this).attr('data-position').split(","));
       var zoom = 14;
-      map.flyTo(position, zoom, {
-        animation: true
-      }); // set map view to zoom to clicked element
+      map.flyTo(position, zoom); // set map view to zoom to clicked element
 
     });
   } // end updateMap
