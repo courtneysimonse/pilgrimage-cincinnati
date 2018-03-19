@@ -5,9 +5,11 @@
   // map options
   var options = {
     zoomSnap: .1,
-    center: [39.2, -84.5], // cincinnati downtown
+    center: [39.15, -84.5], // cincinnati downtown
     zoom: 11,
     minZoom: 6,
+    zoomControl: false,
+    attributionControl: false
     // maxZoom: 15
   }
 
@@ -103,7 +105,7 @@
       // style trail lines
       style: function (feature) {
         return {
-          color: '#EF6527',
+          color: 'red',
           weight: 2
         };
       }
@@ -111,15 +113,14 @@
 
     // icon for churches
     var churchIcon = L.icon({
-      iconUrl: "images/catholic_church.svg",
-      iconSize: [20, 20],
+      iconUrl: "images/church.svg",
+      iconSize: [20, 20]
     })
 
     var parishesLayer = L.geoJson(parishLocationsData, {
       pointToLayer: function(feature, ll) {
         return L.marker(ll, {
           icon: churchIcon,
-          attribution: "<a href='https://thenounproject.com/term/catholic-church/392197' target='_blank'>Catholic Church by Anatoly Ivanov</a>"
         })
       },
       onEachFeature: function(feature, layer) {
@@ -138,7 +139,7 @@
 
     addUi(trailsLayer);
     // show short cathedral trail as default
-    updateMap(trailsLayer, 'Cathedral Trail 5 mi');
+    updateMap(trailsLayer, parishesLayer, 'Cathedral Trail 5 mi');
 
   } // end drawMap
 
@@ -174,11 +175,13 @@
 
   // zoom and center the map on position and add marker
   map.on('locationfound', function (e) {
-    map.flyToBounds(e.bounds);
-
-    locationMarker = new L.circleMarker([e.latlng.lat, e.latlng.lng], {
-      radius: 6
-    }).addTo(myLayer);
+    if (map.getBounds().contains(e.latlng)) {
+      locationMarker = new L.circleMarker([e.latlng.lat, e.latlng.lng], {
+        radius: 6
+      }).addTo(myLayer);
+    } else {
+      geolocate.innerHTML = 'Position outside current view'
+    }
 
   });
 
@@ -193,7 +196,7 @@
   function addUi(dataLayer) {
     // create the dropdown
     var selectControl = L.control({
-      position: 'topright'
+      position: 'bottomleft'
     });
     // when control is added
     selectControl.onAdd = function (map) {
@@ -214,11 +217,23 @@
       });
   } // end addUi
 
-  function updateMap(dataLayer, selectedTrail) {
+  function updateMap(dataLayer, parishesLayer, selectedTrail) {
     console.log(dataLayer);
-    // dataLayer.removeFrom(map);
+    console.log(parishesLayer);
+
+    parishesLayer.eachLayer(function(layer) {
+      // highlight church icon if on selected trail - not sure how to do this?
+      console.log(layer.getLatLng());
+      if (true) {
+        layer.setIcon(L.icon({
+          iconUrl: "images/church_highlight.svg",
+          iconSize: [20, 20]
+        }))
+      }
+    }).addTo(map);
+
     dataLayer.eachLayer(function (layer) {
-      console.log(layer);
+      // console.log(layer);
       if (layer.feature.properties["name"] == selectedTrail) {
         // console.log(layer);
         // console.log(layer.feature.properties.stops);
@@ -237,7 +252,7 @@
           // console.log(stopsProps.description);
           // console.log(layer.feature.properties.stops.features[i].geometry.coordinates);
           var stopPosition = layer.feature.properties.stops.features[i].geometry.coordinates // find coordinate for stop
-          stopsText += "<li class='text-li' data-position='" + stopPosition[1] + "," + stopPosition[0] +
+          stopsText += "<li class='text-li txt-underline-on-hover' data-position='" + stopPosition[1] + "," + stopPosition[0] +
             "' stop=" + i + ">" + stopsProps.description + "</li>";
 
           for (var j = 0; j < stopsProps.directions.features.length; j++) {
@@ -247,7 +262,7 @@
             }
             var turnPosition = stopsProps.directions.features[j].geometry.coordinates // find coordinate for turn
             // console.log(turnPosition);
-            directionsText += "<li class='text-li' data-position=" + turnPosition[1] + "," + turnPosition[0] + ">" +
+            directionsText += "<li class='text-li txt-underline-on-hover' data-position=" + turnPosition[1] + "," + turnPosition[0] + ">" +
               stopsProps.directions.features[j].properties.description + "</li>";
           }
           stopsText += directionsText + "</ul>"
