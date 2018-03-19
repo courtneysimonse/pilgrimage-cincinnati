@@ -137,7 +137,7 @@
       }
     }).addTo(map)
 
-    addUi(trailsLayer);
+    addUi(trailsLayer, parishesLayer);
     // show short cathedral trail as default
     updateMap(trailsLayer, parishesLayer, 'Cathedral Trail 5 mi');
 
@@ -193,7 +193,7 @@
 
 
 
-  function addUi(dataLayer) {
+  function addUi(dataLayer, parishesLayer) {
     // create the dropdown
     var selectControl = L.control({
       position: 'bottomleft'
@@ -212,30 +212,21 @@
         selectedTrail = this.value;
         console.log(selectedTrail);
         // call updateMap function
-        updateMap(dataLayer, selectedTrail);
+        updateMap(dataLayer, parishesLayer, selectedTrail);
 
       });
   } // end addUi
 
   function updateMap(dataLayer, parishesLayer, selectedTrail) {
-    console.log(dataLayer);
-    console.log(parishesLayer);
+    // console.log(dataLayer);
+    // console.log(parishesLayer);
 
-    parishesLayer.eachLayer(function(layer) {
-      // highlight church icon if on selected trail - not sure how to do this?
-      console.log(layer.getLatLng());
-      if (true) {
-        layer.setIcon(L.icon({
-          iconUrl: "images/church_highlight.svg",
-          iconSize: [20, 20]
-        }))
-      }
-    }).addTo(map);
+    var trail = {};
 
     dataLayer.eachLayer(function (layer) {
       // console.log(layer);
       if (layer.feature.properties["name"] == selectedTrail) {
-        // console.log(layer);
+        trail = layer;
         // console.log(layer.feature.properties.stops);
         // add description of trail
         $("#description").html("<div class='txt-m txt-bold'>Trail: " + selectedTrail + "</div>" +
@@ -270,7 +261,7 @@
         }
         stopsText += "</ol>"
         $("#directions").html(stopsText)
-        return layer;
+
       } else {
         // want to only show selected trail - not sure how to do this
         // layer.remove();
@@ -285,6 +276,22 @@
       map.flyTo(position, zoom); // set map view to zoom to clicked element
 
     });
+
+    parishesLayer.eachLayer(function(church) {
+      // highlight church icon if on selected trail
+      var trailBounds = trail.getBounds().pad(.02);
+      if (trailBounds.contains(church.getLatLng())) {
+        church.setIcon(L.icon({
+          iconUrl: "images/church_highlight.svg",
+          iconSize: [20, 20]
+        }))
+      } else {
+        church.setIcon(L.icon({
+          iconUrl: "images/church.svg",
+          iconSize: [20, 20]
+        }))
+      }
+    }).addTo(map);
   } // end updateMap
 
 })();
