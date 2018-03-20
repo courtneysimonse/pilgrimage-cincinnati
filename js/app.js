@@ -126,7 +126,7 @@
       onEachFeature: function(feature, layer) {
         var props = feature.properties;
 
-        var tooltip = "<h3><b>name:</b> " + props.name +
+        var tooltip = "<h3><b>Name:</b> " + props.name +
                       "</h3><p><b>Mass times:</b> " + props.masses + "</p>" +
                       "<p><b>Confession: </b>" + props.ConfessionTimes + "</p>" +
                       "<p><b>Phone Number: </b>" + props.phone + "</p>"
@@ -177,7 +177,11 @@
   map.on('locationfound', function (e) {
     if (map.getBounds().contains(e.latlng)) {
       locationMarker = new L.circleMarker([e.latlng.lat, e.latlng.lng], {
-        radius: 6
+        radius: 4,
+        color: 'red',
+        weight: 2,
+        fillColor: 'yellow',
+        fillOpacity: 0.5
       }).addTo(myLayer);
     } else {
       geolocate.innerHTML = 'Position outside current view'
