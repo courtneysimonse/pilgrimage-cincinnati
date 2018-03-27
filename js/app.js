@@ -1,7 +1,5 @@
 (function () {
 
-  // L.mapbox.accessToken = 'pk.eyJ1IjoiY291cnRuZXlzaW1vbnNlIiwiYSI6ImNqZGozNng0NjFqZWIyd28xdDJ2MXduNTcifQ.PoSFtqfsq1di1IDXzlN4PA';
-
   // map options
   var options = {
     zoomSnap: .1,
@@ -32,25 +30,25 @@
       name: "Cathedral Trail 11.4 mi"
     },
     eastSideEast: {
-      name: "East Side Trail - East Route"
-    },
-    westSideSouth: {
-      name: "West Side Trail - South Loop"
-    },
-    westSideNorth: {
-      name: "West Side Trail - North Loop"
-    },
-    central: {
-      name: "Central Trail"
-    },
-    north: {
-      name: "North Trail"
+      name: "East Side Trail - East Route (10.3 mi)"
     },
     eastSideWest1: {
-      name: "East Side Trail - West Route Option 1"
+      name: "East Side Trail - West Route Option 1 (11 mi)"
     },
     eastSideWest2: {
-      name: "East Side Trail - West Route Option 2"
+      name: "East Side Trail - West Route Option 2 (14.8 mi)"
+    },
+    westSideSouth: {
+      name: "West Side Trail - South Loop (10 mi)"
+    },
+    westSideNorth: {
+      name: "West Side Trail - North Loop (10.4 mi)"
+    },
+    central: {
+      name: "Central Trail (10 mi)"
+    },
+    north: {
+      name: "North Trail (11.3 mi)"
     }
   };
 
@@ -150,14 +148,13 @@
   for (var layer in layerInfo) {
     dropdownList += '<option value="' + layerInfo[layer]['name'] + '">' + layerInfo[layer]['name'] + '</option>'
   }
-  // console.log(dropdownList);
+
   $("#trails").html(dropdownList)
 
   // selectedTrail is one chosen by dropdown
   var selectedTrail = document.getElementById('trails').value;
-  // console.log(selectedTrail);
 
-  // geolocation example from Mapbox
+  // add geolocation on button click
   var geolocate = document.getElementById('geolocate');
 
   var myLayer = L.featureGroup().addTo(map);
@@ -219,7 +216,7 @@
       .change(function () {
         // code executed here when change event occurs
         selectedTrail = this.value;
-        // console.log(selectedTrail);
+
         // call updateMap function
         updateMap(dataLayer, parishesLayer, selectedTrail);
 
@@ -227,13 +224,11 @@
   } // end addUi
 
   function updateMap(dataLayer, parishesLayer, selectedTrail) {
-    // console.log(dataLayer);
-    // console.log(parishesLayer);
 
     var trail = {};
 
     dataLayer.eachLayer(function (layer) {
-      // console.log(layer);
+
       if (layer.feature.properties["name"] == selectedTrail) {
         trail = layer;
 
@@ -242,32 +237,26 @@
           opacity: 1
         })
 
-        // console.log(layer.feature.properties.stops);
         // add description of trail
-        $("#description").html("<div class='txt-m txt-bold'>Trail: " + selectedTrail + "</div>" +
-          layer.feature.properties["description"])
+        $("#description").html("<div class='txt-m txt-bold trail-name cursor-pointer'>Trail: " + selectedTrail + "</div>" +
+          "<div class='details'>" + layer.feature.properties["description"] + "</div>")
 
         var stopsText = "<div class='txt-m txt-bold'>Directions</div><ol class='txt-ol stops'>"
         var directionsText = ""
 
-        // console.log(layer.feature.properties.stops.features.length-1);
-
         // add stops and turn by turn directions as info
         for (var i = 0; i < layer.feature.properties.stops.features.length; i++) {
           var stopsProps = layer.feature.properties.stops.features[i].properties;
-          // console.log(stopsProps.description);
-          // console.log(layer.feature.properties.stops.features[i].geometry.coordinates);
+
           var stopPosition = layer.feature.properties.stops.features[i].geometry.coordinates // find coordinate for stop
           stopsText += "<li class='text-li txt-underline-on-hover cursor-pointer' data-position='" + stopPosition[1] + "," + stopPosition[0] +
             "' stop=" + i + ">" + stopsProps.description + "</li>";
 
           for (var j = 0; j < stopsProps.directions.features.length; j++) {
-            // console.log(stopsProps.directions.features[j].properties.description);
             if (j == 0) {
-              directionsText += "<ul class='txt-ul turns'>"
+              directionsText += "<ul class='txt-ul details'>"
             }
             var turnPosition = stopsProps.directions.features[j].geometry.coordinates // find coordinate for turn
-            // console.log(turnPosition);
             directionsText += "<li class='text-li txt-underline-on-hover cursor-pointer' data-position=" + turnPosition[1] + "," + turnPosition[0] + ">" +
               stopsProps.directions.features[j].properties.description + "</li>";
           }
@@ -285,25 +274,30 @@
       }
     }).addTo(map);
 
-    var trailBounds = trail.getBounds().pad(.1);
-    map.flyToBounds(trailBounds)
+    // toggle description text when click on trail name
+    $('.trail-name').click(function() {
+      $(this).next().slideToggle();
+    });
+
+    // toggle directions list when click on stop
+    $('ol.stops li').click(function() {
+      $(this).next('ul').slideToggle();
+    });
+
+    // flyTo selected trail area
+    map.flyToBounds(trail.getBounds().pad(.1))
 
     // add click function to directions list
     $('li').click(function () {
       var position = ($(this).attr('data-position').split(","));
-      // console.log($(this).attr('data-position').split(","));
       var zoom = 14;
       map.flyTo(position, zoom); // set map view to zoom to clicked element
 
     });
 
-    $('ol.stops li').click(function() {
-      $(this).next('ul').slideToggle();
-    });
-
     parishesLayer.eachLayer(function(church) {
       // highlight church icon if on selected trail
-      if (trailBounds.contains(church.getLatLng())) {
+      if (trail.getBounds().pad(.05).contains(church.getLatLng())) {
         church.setIcon(L.icon({
           iconUrl: "images/church_highlight.svg",
           iconSize: [20, 20]
