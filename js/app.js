@@ -62,7 +62,26 @@
 
   function ready(data) {
 
-    alert("Be aware of your surroundings at all times. Users are solely responsible for risks encountered and their own health and safety.");
+    // Get the modal
+    var modal = document.getElementById('warning');
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // open the modal
+    modal.style.display = "block";
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 
     // all data are in GeoJSON now and ready
     // separate out the data sets and parse CSV to GeoJSON
