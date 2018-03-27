@@ -178,10 +178,10 @@
     if (map.getBounds().contains(e.latlng)) {
       locationMarker = new L.circleMarker([e.latlng.lat, e.latlng.lng], {
         radius: 4,
-        color: 'red',
+        color: 'yellow',
         weight: 2,
-        fillColor: 'yellow',
-        fillOpacity: 0.5
+        // fillColor: 'yellow',
+        fillOpacity: 1
       }).addTo(myLayer);
     } else {
       geolocate.innerHTML = 'Position outside current view'
@@ -247,7 +247,7 @@
         $("#description").html("<div class='txt-m txt-bold'>Trail: " + selectedTrail + "</div>" +
           layer.feature.properties["description"])
 
-        var stopsText = "<div class='txt-m txt-bold'>Directions</div><ol class='txt-ol'>"
+        var stopsText = "<div class='txt-m txt-bold'>Directions</div><ol class='txt-ol stops'>"
         var directionsText = ""
 
         // console.log(layer.feature.properties.stops.features.length-1);
@@ -258,17 +258,17 @@
           // console.log(stopsProps.description);
           // console.log(layer.feature.properties.stops.features[i].geometry.coordinates);
           var stopPosition = layer.feature.properties.stops.features[i].geometry.coordinates // find coordinate for stop
-          stopsText += "<li class='text-li txt-underline-on-hover' data-position='" + stopPosition[1] + "," + stopPosition[0] +
+          stopsText += "<li class='text-li txt-underline-on-hover cursor-pointer' data-position='" + stopPosition[1] + "," + stopPosition[0] +
             "' stop=" + i + ">" + stopsProps.description + "</li>";
 
           for (var j = 0; j < stopsProps.directions.features.length; j++) {
             // console.log(stopsProps.directions.features[j].properties.description);
             if (j == 0) {
-              directionsText += "<ul class='txt-ul'>"
+              directionsText += "<ul class='txt-ul turns'>"
             }
             var turnPosition = stopsProps.directions.features[j].geometry.coordinates // find coordinate for turn
             // console.log(turnPosition);
-            directionsText += "<li class='text-li txt-underline-on-hover' data-position=" + turnPosition[1] + "," + turnPosition[0] + ">" +
+            directionsText += "<li class='text-li txt-underline-on-hover cursor-pointer' data-position=" + turnPosition[1] + "," + turnPosition[0] + ">" +
               stopsProps.directions.features[j].properties.description + "</li>";
           }
           stopsText += directionsText + "</ul>"
@@ -295,6 +295,10 @@
       var zoom = 14;
       map.flyTo(position, zoom); // set map view to zoom to clicked element
 
+    });
+
+    $('ol.stops li').click(function() {
+      $(this).next('ul').slideToggle();
     });
 
     parishesLayer.eachLayer(function(church) {

@@ -3,8 +3,10 @@
 
  <g>
   <title>Layer 1</title>
-  <ellipse fill="#ffff00" stroke="#ff0000" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" cx="95.99998" cy="137.16663" id="svg_4" rx="92.50001" ry="133.5"/>
-  <rect fill="#FF0000" stroke="#ff0000" stroke-width="5" x="82.5" y="27.66666" width="27" height="221" id="svg_1"/>
-  <rect fill="#FF0000" stroke="#ff0000" stroke-width="5" x="25.5" y="83.66666" width="141" height="30" id="svg_2"/>
+  <ellipse ry="133.5" rx="91.50001" id="svg_4" cy="137.16663" cx="95.5" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#ff0000" fill="#ffff00"/>
+  <rect id="svg_1" height="221" width="27" y="27.66666" x="82" stroke-width="5" stroke="#ff0000" fill="#FF0000"/>
+  <rect id="svg_2" height="30" width="141" y="83.66666" x="25" stroke-width="5" stroke="#ff0000" fill="#FF0000"/>
+  <ellipse id="svg_3" fill-opacity="0" ry="131" rx="89.00001" cy="137.33334" cx="95.83333" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="#000000"/>
+  <ellipse id="svg_5" fill-opacity="0" ry="136" rx="94.00001" cy="137.83334" cx="95.33333" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke="#000000" fill="#000000"/>
  </g>
 </svg>
