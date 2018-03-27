@@ -62,6 +62,8 @@
 
   function ready(data) {
 
+    alert("Be aware of your surroundings at all times. Users are solely responsible for risks encountered and their own health and safety.");
+
     // all data are in GeoJSON now and ready
     // separate out the data sets and parse CSV to GeoJSON
     drawMap(data[0], parseCSV(data[1]));
