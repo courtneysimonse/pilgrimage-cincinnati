@@ -271,7 +271,7 @@
 
           var stopPosition = layer.feature.properties.stops.features[i].geometry.coordinates // find coordinate for stop
           stopsText += "<li class='text-li txt-underline-on-hover cursor-pointer' data-position='" + stopPosition[1] + "," + stopPosition[0] +
-            "' stop=" + i + ">" + stopsProps.description + "</li>";
+            "' stop=" + i + "><div class='triangle--d triangle color-black inline'></div>" + stopsProps.description + "</li>";
 
           for (var j = 0; j < stopsProps.directions.features.length; j++) {
             if (j == 0) {
