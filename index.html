@@ -21,10 +21,15 @@
       z-index: 650;
       background: rgba(255,255,255,0.9);
       border-radius: 5px;
+      font-weight: bold;
     }
 
     .details {
      display: none;
+    }
+
+    li.location {
+      list-style-position: inside;
     }
 
     /* The Modal (background) */
@@ -44,10 +49,10 @@
    /* Modal Content/Box */
    .modal-content {
        background-color: #fefefe;
-       margin: 15% auto; /* 15% from the top and centered */
+       margin: 20% auto; /* 20% from the top and centered */
        padding: 20px;
        border: 1px solid #888;
-       width: 80%; /* Could be more or less, depending on screen size */
+       width: 80%;
    }
 
    /* The Close Button */
@@ -80,7 +85,7 @@
       </div>
     </div>
     <div class='flex-child flex-child--grow viewport-twothirds viewport-full-ml'>
-      <h1 class='txt-h1 py6 px6 absolute'>Pilgrimage Trails</h1>
+      <h1 class='txt-h1-mxl txt-h1-ml txt-h2-mm py6 px6 absolute'>Pilgrimage Trails</h1>
       <div id="map" class='viewport-twothirds viewport-full-ml'></div>
     </div>
   </div>

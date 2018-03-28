@@ -270,15 +270,15 @@
           var stopsProps = layer.feature.properties.stops.features[i].properties;
 
           var stopPosition = layer.feature.properties.stops.features[i].geometry.coordinates // find coordinate for stop
-          stopsText += "<li class='text-li txt-underline-on-hover cursor-pointer' data-position='" + stopPosition[1] + "," + stopPosition[0] +
-            "' stop=" + i + "><div class='triangle--d triangle color-black inline'></div>" + stopsProps.description + "</li>";
+          stopsText += "<li class='text-li cursor-pointer location bg-gray round color-white txt-bold px6 wmax240' data-position='" + stopPosition[1] + "," + stopPosition[0] +
+            "' stop=" + i + ">" + stopsProps.description + "</li>";
 
           for (var j = 0; j < stopsProps.directions.features.length; j++) {
             if (j == 0) {
               directionsText += "<ul class='txt-ul details'>"
             }
             var turnPosition = stopsProps.directions.features[j].geometry.coordinates // find coordinate for turn
-            directionsText += "<li class='text-li txt-underline-on-hover cursor-pointer' data-position=" + turnPosition[1] + "," + turnPosition[0] + ">" +
+            directionsText += "<li class='text-li txt-underline-on-hover cursor-pointer location' data-position=" + turnPosition[1] + "," + turnPosition[0] + ">" +
               stopsProps.directions.features[j].properties.description + "</li>";
           }
           stopsText += directionsText + "</ul>"
@@ -309,7 +309,7 @@
     map.flyToBounds(trail.getBounds().pad(.1))
 
     // add click function to directions list
-    $('li').click(function () {
+    $('li.location').click(function () {
       var position = ($(this).attr('data-position').split(","));
       var zoom = 14;
       map.flyTo(position, zoom); // set map view to zoom to clicked element
@@ -318,7 +318,7 @@
 
     parishesLayer.eachLayer(function(church) {
       // highlight church icon if on selected trail
-      if (trail.getBounds().pad(.05).contains(church.getLatLng())) {
+      if (trail.getBounds().pad(.08).contains(church.getLatLng())) {
         church.setIcon(L.icon({
           iconUrl: "images/church_highlight.svg",
           iconSize: [20, 20]
