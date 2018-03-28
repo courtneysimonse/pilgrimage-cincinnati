@@ -147,8 +147,9 @@
 
         var tooltip = "<h3><b>Name:</b> " + props.name +
                       "</h3><p><b>Mass times:</b> " + props.masses + "</p>" +
-                      "<p><b>Confession: </b>" + props.ConfessionTimes + "</p>" +
-                      "<p><b>Phone Number: </b>" + props.phone + "</p>"
+                      "<p><b>Confession:</b> " + props.ConfessionTimes + "</p>" +
+                      "<p><b>Phone Number:</b> " + props.phone + "</p>" +
+                      "<p><b>Website:</b> " + props.website + "</p>"
 
         layer.bindTooltip(tooltip, {
           className: 'tooltip'
